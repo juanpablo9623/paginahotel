@@ -312,3 +312,95 @@ nav {
 .about__content .section__description {
   margin-bottom: 2rem;
 }
+/*estilo responsivo
+@media (max-width: 768px) {
+  .section__header {
+    font-size: 2rem;
+  }
+
+  .section__container {
+    padding: 3rem 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .header__container h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about__container {
+    gap: 2rem;
+  }
+
+  .about__card span {
+    font-size: 2rem;
+  }
+
+  .about__card h4 {
+    font-size: 1.25rem;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav__header {
+    padding: 0.5rem;
+  }
+}
+
+/* Estilos para tablets*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section__header {
+    font-size: 2.5rem;
+  }
+
+  .header__container h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .about__container {
+    gap: 3rem;
+  }
+
+  .about__card span {
+    font-size: 2.5rem;
+  }
+
+  .about__card h4 {
+    font-size: 1.35rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/*pantallas grandes */
+@media (min-width: 1200px) {
+  .section__container {
+    padding: 6rem 2rem;
+  }
+
+  .header__container h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .about__container {
+    gap: 4rem;
+  }
+
+  .about__card span {
+    font-size: 3.5rem;
+  }
+}
