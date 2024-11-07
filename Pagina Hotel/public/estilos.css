@@ -178,7 +178,7 @@ nav {
       rgba(15, 26, 44, 0.5),
       rgba(15, 26, 44, 0.5)
     ),
-    url("imagenes/header.jpg");
+    url("../public/img/header.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -246,8 +246,8 @@ nav {
   bottom: 0;
   right: 0;
   height: 75%;
-  width: 100%;
-  background-image: url("imagenes/about-bg.jpg");
+  width: 30%;
+  background-image: url("../public/img/about-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -404,3 +404,5 @@ nav {
     font-size: 3.5rem;
   }
 }
+
+
