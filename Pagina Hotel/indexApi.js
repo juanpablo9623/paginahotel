@@ -1,10 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
-const userRoutes = require('./routes/userRoutes');
+const userRoutesR = require('./routes/userRoutesR');
+const userRoutesA = require('./routes/userRoutesA');
 const cors = require('cors');
+const bcrypt = require('bcrypt');
 
 const app = express();
+
+
 
 // Middleware
 app.use(bodyParser.json());
@@ -18,10 +22,13 @@ app.use(session({
 }));
 
 // Rutas
-app.use('/users', userRoutes);
+app.use('/users', userRoutesR);
+app.use('/users', userRoutesA);
 
 // Iniciar el servidor
-const PORT = 3006;
+const PORT = 3007;
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
