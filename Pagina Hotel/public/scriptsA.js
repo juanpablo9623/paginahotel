@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
       })
         .then(response => response.json())
         .then(data => {
-          if (data.username === username && data.password === password) {
-            location.href = '/views/userReserva.html';
+          console.log(data);
+          if (data.message === 'Inicio de sesión exitoso, continúe por favor') {
+            console.log("redireccionando");
+            window.location.href = '/views/userReserva.html';
           } else {
             message.textContent = data.message || 'Error de autenticación';
           }

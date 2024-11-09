@@ -20,7 +20,7 @@
   <title>REGISTRO</title>
 </head>
 
-<body>
+<body id="bodyRegistro">
   <nav>
     <div class="nav__bar">
       <div class="nav__header">
@@ -34,43 +34,44 @@
         </div>
 
         <div class="botones">
-          <button type="button" class="btn btn-primary" onclick="location.href='login.html'">LOGIN</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='login.html'">INICIAR SESION</button>
           <button type="button" class="btn btn-primary" onclick="location.href='register.html'">REGISTRO</button>
         </div>
       </div>
     </div>
   </nav>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
   <div class="tarjetaregistro">
     <form id="registerForm">
+      <img src="../public/img/perfil-del-usuario.png" id="imgregistro" alt="imagen registro usuario" style="width:250px">
+      <br>
+      <br>
+      <h4>REGISTRO DE USUARIO</h4>
       <br>
       <input type="text" id="nombre" placeholder="Nombre y Apellidos" required>
-      <span>
-        <input type="number" id="cedula" placeholder="Cédula" required>
-      </span>
+      <br>
+      <br>
+      <input type="number" id="cedula" placeholder="Cédula" required>
       <br>
       <br>
       <input type="text" id="username" placeholder="Usuario" required>
-      <span>
-        <input type="password" id="password" placeholder="Contraseña" required>
-      </span>
+      <br>
+      <br>
+      <input type="password" id="password" placeholder="Contraseña" required>
       <br>
       <br>
       <input type="email" id="email" placeholder="Correo" required>
-      
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">Cerrar</button>
-        <button type="submit" class="btn btn-primary">Registrarse</button>
+      <br>
+      <br>
+      <div>
+        <button type="button" class="btn btn-dark" onclick="location.href='index.html'">Cancelar</button>
+        <button type="submit" class="btn btn-success">Registrarse</button>
       </div>
     </form>
     <div id="message"></div>
 
-    
+
   </div>
 
   <script src="../public/scriptsR.js"></script>

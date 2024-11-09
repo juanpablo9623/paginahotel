@@ -10,8 +10,8 @@ const loginUser = (req, res) => {
     if (!user) return res.status(401).json({ error: 'Credenciales incorrectas' });
 
     req.session.userId = user.id;
-    req.session.nombre = user.nombre;
-    res.json({ message: 'Inicio de sesión exitoso, bienvenido '});
+    req.session.nombre = user.username;
+    res.json({ message: 'Inicio de sesión exitoso, continúe por favor'});
   });
 };
 

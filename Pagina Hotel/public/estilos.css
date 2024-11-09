@@ -46,8 +46,6 @@
 .btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  color: var(--white);
-  background-color: var(--secondary-color);
   outline: none;
   border: none;
   border-radius: 5px;
@@ -55,9 +53,11 @@
   transition: background-color 0.3s ease;
 }
 
+/*
 .btn:hover {
   background-color: #d49416;
 }
+*/
 
 .section__nav {
   margin-left: auto;
@@ -76,7 +76,7 @@
 
 .section__nav span:hover {
   background-color: var(--secondary-color);
-  color: var(--white); 
+  color: var(--white);
 }
 
 .logo {
@@ -93,15 +93,16 @@
   font-size: 2rem;
 }
 
-img,
+#imagenindex,
 video {
+  text-align: center;
   width: 100%;
   display: flex;
   transition: transform 0.3s ease;
 }
 
 img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 a {
@@ -174,10 +175,8 @@ nav {
 
 .header {
   padding-block: 5rem;
-  background-image: linear-gradient(
-      rgba(15, 26, 44, 0.5),
-      rgba(15, 26, 44, 0.5)
-    ),
+  background-image: linear-gradient(rgba(15, 26, 44, 0.5),
+      rgba(15, 26, 44, 0.5)),
     url("../public/img/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -195,7 +194,7 @@ nav {
   line-height: 7rem;
   font-family: var(--header-font);
   color: var(--white);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .booking {
@@ -306,12 +305,13 @@ nav {
   height: 100%;
   object-fit: cover;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .about__content .section__description {
   margin-bottom: 2rem;
 }
+
 /*estilo responsivo
 @media (max-width: 768px) {
   .section__header {
@@ -405,4 +405,57 @@ nav {
   }
 }
 
+.tarjetalogin {
+  justify-content: center;
+  margin-left: 690px;
+  margin-top: 90px;
+  display: flex;
+  padding: 50px;
+  padding-left: 95px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 470px;
+  border: 1px solid #00000027;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(68, 122, 230, 0.662);
 
+}
+
+.tarjetaregistro {
+  text-align: center;
+  margin-left: 690px;
+  margin-top: 110px;
+  padding: 100px 50px 80px 50px;
+  padding-top: 10px;
+  width: 470px;
+  border: 1px solid #00000027;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(68, 122, 230, 0.662);
+}
+
+#imgregistro {
+  text-align: center;
+}
+
+input {
+  width: 250px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  font-size: 17px;
+  background: #ffffffd5;
+
+}
+
+#bodyLogin,
+#bodyRegistro {
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: -4cm;
+  background-repeat: no-repeat;
+}
