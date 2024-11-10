@@ -21,7 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
           console.log(data);
           if (data.message === 'Inicio de sesión exitoso, continúe por favor') {
             console.log("redireccionando");
+<<<<<<< HEAD
             window.location.href = '/views/reserva.html';
+=======
+            window.location.href = '/views/userReserva.html';
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
           } else {
             message.textContent = data.message || 'Error de autenticación';
           }

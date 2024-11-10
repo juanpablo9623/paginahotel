@@ -3,10 +3,15 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const userRoutesR = require('./routes/userRoutesR');
 const userRoutesA = require('./routes/userRoutesA');
+<<<<<<< HEAD
 const reservacionRoutes = require('./routes/reservacionRoutes');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 const mysql = require('mysql');
+=======
+const cors = require('cors');
+const bcrypt = require('bcrypt');
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
 
 const app = express();
 
@@ -23,6 +28,7 @@ app.use(session({
   saveUninitialized: true
 }));
 
+<<<<<<< HEAD
 app.use(cors({
   origin: ['http://127.0.0.1:5500', 'http://127.0.0.1:5501'],
   methods: ['GET', 'POST'],
@@ -50,6 +56,11 @@ app.use((req, res, next) => {
   req.pool = pool;
   next();
 });
+=======
+// Rutas
+app.use('/users', userRoutesR);
+app.use('/users', userRoutesA);
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
 
 // Iniciar el servidor
 const PORT = 3007;

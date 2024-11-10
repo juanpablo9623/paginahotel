@@ -1,20 +1,15 @@
 const mysql = require('mysql2');
-const bcrypt = require('bcrypt');
 
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '', // Cambia esto por tu contraseña de MySQL
-<<<<<<< HEAD
-  database: 'reservas_hotel',
-=======
   database: 'proyecto',
->>>>>>> a572031ff53ca281111583ae795811addae12ca6
    multipleStatements: 'true'
 });
 
 // Función para registrar un usuario con contraseña encriptada
-const registerUser = (nombre, cedula, username, password, email, callback) => {
+const registrarReserva = (nombre, cedula, username, password, email, callback) => {
   bcrypt.hash(password, 10, (err, hash) => {
     if (err) return callback(err);
 
@@ -52,6 +47,5 @@ const authenticateUser = (username, password, callback) => {
 
 
 module.exports = {
-  registerUser,
   authenticateUser
 };

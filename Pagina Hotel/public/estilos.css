@@ -54,19 +54,25 @@
 .btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  color: var(--white);
-  background-color: var(--secondary-color);
   outline: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
 /*
 .btn:hover {
   background-color: #d49416;
 }
 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
 .section__nav {
   margin-left: auto;
   display: flex;
@@ -84,7 +90,7 @@
 
 .section__nav span:hover {
   background-color: var(--secondary-color);
-  color: var(--white); 
+  color: var(--white);
 }
 
 .logo {
@@ -103,13 +109,14 @@
 
 #imagenindex,
 video {
+  text-align: center;
   width: 100%;
   display: flex;
   transition: transform 0.3s ease;
 }
 
 img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 a {
@@ -182,11 +189,17 @@ nav {
 
 .header {
   padding-block: 5rem;
+<<<<<<< HEAD
   background-image: linear-gradient(
       rgba(15, 26, 44, 0.5),
       rgba(15, 26, 44, 0.5)
     ),
     url("/public/img/header.jpg");
+=======
+  background-image: linear-gradient(rgba(15, 26, 44, 0.5),
+      rgba(15, 26, 44, 0.5)),
+    url("../public/img/header.jpg");
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -203,7 +216,7 @@ nav {
   line-height: 7rem;
   font-family: var(--header-font);
   color: var(--white);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .booking {
@@ -254,8 +267,13 @@ nav {
   bottom: 0;
   right: 0;
   height: 75%;
+<<<<<<< HEAD
   width: 100%;
   background-image: url("/public/img/about-bg.jpg");
+=======
+  width: 30%;
+  background-image: url("../public/img/about-bg.jpg");
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -314,7 +332,7 @@ nav {
   height: 100%;
   object-fit: cover;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 /* ese es el espacio de las habitaciones */
 .room__container {
@@ -394,6 +412,7 @@ nav {
   margin-bottom: 2rem;
 }
 
+<<<<<<< HEAD
 .gastronomia__container {
   text-align: center;
   padding: 4rem 1rem;
@@ -409,6 +428,9 @@ nav {
 
 /* estilo responsivo 
 
+=======
+/*estilo responsivo
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
 @media (max-width: 768px) {
   .section__header {
     font-size: 2rem;
@@ -556,8 +578,11 @@ input {
   background-size: cover;
   background-position-y: -4cm;
   background-repeat: no-repeat;
+<<<<<<< HEAD
 }
 
 #imagregistro2 {
 text-align: center;
+=======
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
 }

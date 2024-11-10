@@ -25,4 +25,7 @@ module.exports = {
   loginUser,
   logoutUser
 };
+<<<<<<< HEAD
 
+=======
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6

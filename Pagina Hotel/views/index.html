@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -293,3 +294,96 @@
     </footer>
   </body>
 </html>
+=======
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../public/estilos.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>Manoir Doré Luxury Hotel</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <div>MDLH</div>
+          <span>MANOIR DORÉ<br />LUXURY HOTEL</span>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+
+        <div class="botones">
+          <button type="button" class="btn btn-primary" onclick="location.href='login.html'">INICIAR SESION</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='register.html'">REGISTRO</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Nuestra Historia</a></li>
+        <li><a href="#rooms">Suites</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header" id="home">
+    <div class="section__container header__container">
+      <p class="section__subheader">BIENVENIDO A</p>
+      <h1>Tu Refugio Privado<br />Te Espera</h1>
+      <button class="btn">Descubre la Tranquilidad</button>
+    </div>
+  </header>
+
+
+
+  <section class="about" id="about">
+    <div class="section__container about__container">
+      <div class="about__grid">
+        <div class="about__image">
+          <img src="../public/img/iniciopaginahotel.jpg" alt="about" id="imagenindex"/>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-team-line"></i></span>
+          <h4>Nuestra Visión</h4>
+          <p>
+            Redefinir el lujo con una fusión inigualable de elegancia y confort.
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="../public/img/personas1hotelmdlh.jpeg" alt="about" id="imagenindex"/>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-hotel-line"></i></span>
+          <h4>Suites a tu Medida</h4>
+          <p>Disfruta de un mundo de confort diseñado para ti.</p>
+        </div>
+      </div>
+
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.getElementById("nav-links");
+        menuBtn.addEventListener("click", () => {
+          navLinks.classList.toggle("open");
+        });
+      </script>
+</body>
+
+</html>
+>>>>>>> a572031ff53ca281111583ae795811addae12ca6
