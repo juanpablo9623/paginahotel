@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/public/menu.css" />
+  <title>Menú de Comidas - Manoir Doré Luxury Hotel</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <div>MDLH</div>
+          <span>MANOIR DORÉ<br />LUXURY HOTEL</span>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <div class="botonlogin">
+            
+          </div>
+          
+        </div>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="/views/index.html">Inicio</a></li>
+        <li><a href="/views/menu.html">Gastronomía</a></li> 
+        <li><a href="/views/historia.html">Nuestra Historia</a></li>
+        <li><a href="/views/index.html">Suites</a></li>
+        <li><a href="/views/index.html">Experiencias</a></li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+
+  <section class="gastronomia" id="menu">
+    <div class="section__container gastronomia__container">
+      <p class="section__subheader">GASTRONOMÍA</p>
+      <h2 class="section__header">Menú de Comidas</h2>
+
+      
+      <div class="menu__category">
+        <h3>Entradas</h3>
+        <div class="menu__items">
+          <div class="menu__item">
+            <img src="/public/imgcomidas/ensaladacesar.jpg" alt="Entrada 1" />
+            <div class="menu__item__details">
+              <h4>Ensalada César</h4>
+              <p>Ensalada fresca con aderezo César, pollo a la parrilla y queso parmesano.</p>
+              <h3>$20.000<span>/plato</span></h3>
+            </div>
+          </div>
+          <div class="menu__item">
+            <img src="/public/imgcomidas/sopatomate.jpg" alt="Entrada 2" />
+            <div class="menu__item__details">
+              <h4>Sopa de Tomate</h4>
+              <p>Sopa cremosa de tomate con un toque de albahaca fresca.</p>
+              <h3>$15.000<span>/plato</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="menu__category">
+        <h3>Platos Principales</h3>
+        <div class="menu__items">
+          <div class="menu__item">
+            <img src="/public/imgcomidas/filetemignon.jpg" alt="Plato Principal 1" />
+            <div class="menu__item__details">
+              <h4>Filete Mignon</h4>
+              <p>Filete mignon a la parrilla, servido con papas al romero y vegetales asados.</p>
+              <h3>$55.000<span>/plato</span></h3>
+            </div>
+          </div>
+          <div class="menu__item">
+            <img src="/public/imgcomidas/pastaalaalfredojpg.jpg" alt="Plato Principal 2" />
+            <div class="menu__item__details">
+              <h4>Pasta a la Alfredo</h4>
+              <p>Pasta fresca con una rica salsa cremosa Alfredo y champiñones.</p>
+              <h3>$30.000<span>/plato</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="menu__category">
+        <h3>Postres</h3>
+        <div class="menu__items">
+          <div class="menu__item">
+            <img src="/public/imgcomidas/postrelimonjpg.jpg" alt="Postre 1" />
+            <div class="menu__item__details">
+              <h4>Tarta de Limón</h4>
+              <p>Tarta de limón con base de galleta y crema suave de limón.</p>
+              <h3>$12.000<span>/postre</span></h3>
+            </div>
+          </div>
+          <div class="menu__item">
+            <img src="/public/imgcomidas/brownie.jpg" alt="Postre 2" />
+            <div class="menu__item__details">
+              <h4>Brownie de Chocolate</h4>
+              <p>Delicioso brownie de chocolate con nueces y un toque de vainilla.</p>
+              <h3>$10.000<span>/postre</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="menu__category">
+        <h3>Bebidas</h3>
+        <div class="menu__items">
+          <div class="menu__item">
+            <img src="/public/imgcomidas/mojito.jpg" alt="Bebida 1" />
+            <div class="menu__item__details">
+              <h4>Cóctel Mojito</h4>
+              <p>Cóctel refrescante de menta, lima, ron y azúcar moreno.</p>
+              <h3>$15.000<span>/bebida</span></h3>
+            </div>
+          </div>
+          <div class="menu__item">
+            <img src="/public/imgcomidas/jugomora.jpg" alt="Bebida 2" />
+            <div class="menu__item__details">
+              <h4>Jugo Natural</h4>
+              <p>Jugo natural de naranja recién exprimido.</p>
+              <h3>$8.000<span>/bebida</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col"></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

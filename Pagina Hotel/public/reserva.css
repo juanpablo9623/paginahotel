@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0a2239;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.booking-calendar {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #1a476f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.calendar__header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.input__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #ffffffcc;
+}
+
+input[type="date"],
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005ea6;
+    color: white;
+    font-size: 1rem;
+}
+
+input[type="date"]::placeholder,
+select::placeholder {
+    color: #ffffffcc;
+}
+
+input[type="date"]:focus,
+select:focus {
+    outline: 2px solid #00aaff;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #006cbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004f8c;
+}
+
+.result-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#reserveBtn.hidden {
+    display: none;
+  }

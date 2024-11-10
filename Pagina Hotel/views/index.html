@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../public/estilos.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Manoir Doré Luxury Hotel</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>MDLH</div>
+            <span>MANOIR DORÉ<br />LUXURY HOTEL</span>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+
+          <div class="botones">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='login.html'"
+            >
+              Iniciar Sesion
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='register.html'"
+            >
+              Registro
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Nuestra Historia</a></li>
+          <li><a href="#rooms">Suites</a></li>
+          <li><a href="#feature">Experiencias</a></li>
+          <li><a href="#menu">Gastronomía</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <p class="section__subheader">BIENVENIDO A</p>
+        <h1>Tu Refugio Privado<br />Te Espera</h1>
+        <button class="btn">Descubre la Tranquilidad</button>
+      </div>
+    </header>
+
+    <section class="booking" id="reservas">
+      <div class="section__container booking__container">
+        <div class="booking__content">
+          <h2 class="section__header5">Reserva tu Escape de Lujo</h2>
+          <p class="section__description">
+            Vive una experiencia inolvidable en el Manoir Doré Luxury Hotel.
+            Encuentra la habitación perfecta y disfruta de nuestro exclusivo
+            servicio. Consulta la disponibilidad de nuestras suites en las
+            fechas deseadas.
+          </p>
+          <a href="reserva.html" class="btn booking__btn"
+            >Explora Disponibilidad</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="../public/img/iniciopaginahotel.jpg" alt="about" id="imagenindex" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-team-line"></i></span>
+            <h4>Nuestra Visión</h4>
+            <p>
+              Redefinir el lujo con una fusión inigualable de elegancia y
+              confort.
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="../public/img/personas1hotelmdlh.jpeg" alt="about" id="imagenindex" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-hotel-line"></i></span>
+            <h4>Suites a tu Medida</h4>
+            <p>Disfruta de un mundo de confort diseñado para ti.</p>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="section__subheader">NUESTRA HISTORIA</p>
+          <h2 class="section__header2">
+            Donde la Elegancia Encuentra se encuentra con la Naturaleza
+          </h2>
+          <p class="section__description">
+            El Manoir Doré Luxury Hotel te invita a experimentar una mezcla de
+            lujo moderno y naturaleza intacta, creando el escape perfecto del
+            ajetreo diario.
+          </p>
+          <a href="/views/historia.html" class="btn gastronomia__btn"
+            >Explorar Ahora</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="room__container" id="rooms">
+      <p class="section__subheader">SUITES</p>
+      <h2 class="section__header">Habitaciones Exclusivas</h2>
+
+      <div class="room__grid">
+        <div class="room__card">
+          <img
+            src="/public/img/habitacion3.jpg"
+            alt="Suite Azul"
+            class="room__image" id="imagenindex"
+          />
+          <div class="room__card__details">
+            <h4 class="room__title">Suite Azul</h4>
+            <p class="room__description">
+              Un espacio tranquilo y amplio, para que te conectes contigo mismo.
+            </p>
+            <h3 class="room__price">$450.000 <span>/noche</span></h3>
+          </div>
+        </div>
+
+        <div class="room__card">
+          <img
+            src="/public/img/villaturca.jpg"
+            alt="Villa Turca"
+            class="room__image"
+            id="imagenindex"
+          />
+          <div class="room__card__details">
+            <h4 class="room__title">Villa Turca</h4>
+            <p class="room__description">
+              Rodeada de vegetación exuberante, perfecta para un retiro
+              pacífico.
+            </p>
+            <h3 class="room__price">$250.000 <span>/noche</span></h3>
+          </div>
+        </div>
+
+        <div class="room__card">
+          <img
+            src="/public/img/vista1hotelmdlh.jpg"
+            alt="Penthouse Muller"
+            class="room__image"
+            id="imagenindex"
+          />
+          <div class="room__card__details">
+            <h4 class="room__title">Penthouse Muller</h4>
+            <p class="room__description">
+              Un lujoso penthouse con vistas panorámicas del horizonte de la
+              ciudad.
+            </p>
+            <h3 class="room__price">$350.000 <span>/noche</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="section__container fecture_container" id="menu">
+        <div class="intro_content">
+          <p class="section__subheader">GASTRONOMÍA</p>
+          <h2 class="section__header">Descubre Nuestra Gastronomía</h2>
+          <p class="section__description">
+            Déjate seducir por una experiencia gastronómica inigualable. Sabores
+            exquisitos, ingredientes frescos y técnicas culinarias de
+            vanguardia, todo preparado para llevar tu paladar a nuevas alturas.
+            En Manoir Doré, cada plato es una obra maestra que te transporta a
+            un mundo de indulgencia y sofisticación. ¡Ven y descubre el lujo en
+            cada bocado!
+          </p>
+          <br />
+          <br />
+          <a href="/views/menu.html" class="btn gastronomia__btn">Ver Menú</a>
+        </div>
+        <div class="feature__grid">
+          <div class="feature__card"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container feature__container" id="feature">
+      <p class="section__subheader">EXCLUSIVO</p>
+      <h2 class="section__header">Experiencias Incomparables</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <img
+            src="/public/imgexperiencias/calificaciontop.jpeg"
+            alt="Calificación Top"
+            class="feature__image"
+            id="imagenindex"
+          />
+          <div class="feature__info">
+            <span><i class="ri-star-line"></i></span>
+            <h4>Calificación Top</h4>
+            <p>
+              Consistentemente elogiado por nuestro servicio excepcional y
+              experiencias inolvidables.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature__card">
+          <img
+            src="/public/imgexperiencias/zonaderelajacion.jpg"
+            alt="Zonas de Serenidad"
+            class="feature__image"
+            id="imagenindex"
+          />
+          <div class="feature__info">
+            <span><i class="ri-moon-line"></i></span>
+            <h4>Zonas de Serenidad</h4>
+            <p>
+              Nuestras zonas exclusivas ofrecen la atmósfera perfecta para la
+              reflexión y la calma.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature__card">
+          <img
+            src="/public/imgexperiencias/ubicacionesunicas.jpg"
+            alt="Ubicaciones Únicas"
+            class="feature__image"
+            id="imagenindex"
+          />
+          <div class="feature__info">
+            <span><i class="ri-earth-line"></i></span>
+            <h4>Ubicaciones Únicas</h4>
+            <p>
+              Situado en el corazón de la naturaleza, con una belleza escénica
+              incomparable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const navLinks = document.getElementById("nav-links");
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
+
+
+    <footer class="footer">
+      <p>
+        &copy; 2024 Manoir Doré Luxury Hotel. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
